@@ -1,7 +1,29 @@
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+/**
+ * Clase que genera un documento JSON para representar una lista de reproducción de Spotify
+ * utilizando la librería org.json. Este programa crea una lista de reproducción con canciones
+ * y muestra el contenido en formato JSON en la consola, cumpliendo con el ejercicio 3 del
+ * Trabajo Práctico 3 de la materia Laboratorio de Programación, correspondiente a la carrera
+ * Licenciatura en Sistemas de la Universidad Nacional de la Patagonia Austral (UNPA), año 2025.
+ * 
+ * @author Nicolas Buttefield
+ * @version 1.0
+ * @since 2025-05-04
+ */
+
 public class CreadorJsonListaReproduccion {
+
+    /**
+     * Método principal que crea un documento JSON representando una lista de reproducción
+     * con canciones y lo muestra en la consola. La lista incluye un identificador, nombre,
+     * descripción, creador y un arreglo de canciones, cada una con título, artista, álbum,
+     * duración y género.
+     * 
+     * @param args Argumentos de la línea de comandos (no utilizados).
+     * @throws Exception Si ocurre un error al construir o mostrar el JSON.
+     */
     public static void main(String[] args) {
         try {
             // Crear el arreglo de canciones
