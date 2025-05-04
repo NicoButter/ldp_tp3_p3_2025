@@ -13,8 +13,7 @@ import org.json.JSONObject;
  * @since 2025-05-04
  */
 
-public class CreadorJsonListaReproduccion {
-
+ public class CreadorJsonListaReproduccion {
     /**
      * Método principal que crea un documento JSON representando una lista de reproducción
      * con canciones y lo muestra en la consola. La lista incluye un identificador, nombre,
@@ -64,12 +63,31 @@ public class CreadorJsonListaReproduccion {
             lista.put("creador", "JuanPerez");
             lista.put("canciones", canciones);
 
-            // Mostrar el JSON en la consola con formato legible
-            System.out.println("JSON Generado:");
-            System.out.println(lista.toString(2)); // El parámetro 2 es para indentación
+            // Mostrar la salida decorada
+            System.out.println("==================================================");
+            System.out.println("** Ejercicio 3 - Trabajo Práctico 3 **");
+            System.out.println("** Materia: Laboratorio de Programación **");
+            System.out.println("** Carrera: Licenciatura en Sistemas, UNPA 2025 **");
+            System.out.println("==================================================");
+            System.out.println();
+            System.out.println("Generando documento JSON para una lista de reproducción de Spotify...");
+            System.out.println("Estructura del JSON:");
+            System.out.println("- Lista de reproducción: id, nombre, descripción, creador, canciones.");
+            System.out.println("- Canciones: título, artista, álbum, duración (segundos), género.");
+            System.out.println();
+            System.out.println("** Inicio del JSON **");
+            System.out.println("--------------------------------------------------");
+            System.out.println(lista.toString(2)); // JSON con indentación
+            System.out.println("--------------------------------------------------");
+            System.out.println("** Fin del JSON **");
+            System.out.println();
+            System.out.println("JSON generado exitosamente.");
+            System.out.println("==================================================");
 
         } catch (Exception e) {
+            System.err.println("==================================================");
             System.err.println("Error al generar el JSON: " + e.getMessage());
+            System.err.println("==================================================");
             e.printStackTrace();
         }
     }
